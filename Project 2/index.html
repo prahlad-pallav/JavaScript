@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500 gap-10"
+    >
+      <div class="text-white font-medium text-[25px]">
+        Increment And Decrement
+      </div>
+
+      <div
+        class="bg-white flex flex-row text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5 shadow-lg shadow-indigo-500/40"
+      >
+        <button
+          onclick="decrement()"
+          class="border-r-2 border-[#bfbfbf] px-5 bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-green-400 hover:to-blue-500"
+        >
+          <i class="fa-solid fa-minus"></i>
+        </button>
+
+        <div id="counter" class="font-bold">0</div>
+
+        <button
+          onclick="increment()"
+          class="border-l-2 border-[#bfbfbf] px-5 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+
+      <button onclick="reset()" class="text-[30px] hover:scale-110">
+        <i class="fa-solid fa-arrows-rotate" style="color: #ffffff"></i>
+      </button>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/3e9d7b0c11.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
