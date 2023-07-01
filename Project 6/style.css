@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+.nav-items{
+    z-index: 10;
+    position: fixed;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 5px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient( 109.6deg,  rgba(118,12,99,1) 11.2%, rgba(71,11,75,1) 98.6% );
+    box-shadow: 0px 1px 10px #999;
+}
+
+.nav-container a img{
+    width: 40px;
+    margin-top: 5px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    color: white;
+    padding-left: 20px;
+}
+
+.nav-li{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 40px;
+    color: #2E86C1;
+    font-weight: bold;
+}
+
+.nav-links ul li{
+    transition: transform 1.5s;
+}
+
+.nav-links ul li:hover{
+    transform: scale(1.1);
+}
+
+.news-input{
+    height: 30px;
+    padding-inline:20px ;
+    border-radius: 4px;
+    border: 2px solid rgba(5,8,114,1);
+    border-color:radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );;
+}
+
+.news-input::placeholder{
+    color: rgba(5,8,114,1)  ;
+}
+
+.search-btn{
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    border-radius: 4px;
+    border: 2px solid rgba(5,8,114,1);
+}
+
+.search-btn:hover{
+    font-weight: bold;
+    color: rgb(77, 187, 189);
+}
+
+main{
+    padding-block: 20px;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+}
+
+.card-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    overflow: hidden;
+    min-height: 400px;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(193, 151, 211);
+    transition: transform 0.5s;
+    background-image: linear-gradient( 109.6deg,  rgba(118,12,99,1) 11.2%, rgba(71,11,75,1) 98.6% );    
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-header img{
+    height: 200px;
+    overflow: hidden;
+    object-fit: fill;
+}
+
+.card-content h3{
+    color: white;
+    line-height: 1.5rem;
+    margin: 10px 0;
+}
+
+.card-content p{
+    color:  lightgoldenrodyellow;
+    line-height: 1.5rem;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.card-content h6{
+    color: rgb(77, 187, 189);
+}
+
+.card-content p{
+    margin: 10px 0;
+}
+
