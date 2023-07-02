@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-DashBoard | Prahlad</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Assests/Favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="main-container">
+        <h1>Weather DashBoard</h1>
+        <div class="tab-container">
+          <p class="tab" data-userWeather>Your Weather</p>
+          <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+          <!-- Access Location  -->
+          <div class="sub-container grant-location-container">
+            <img
+              src="Assests/access.png"
+              alt="location-img"
+              srcset=""
+              width="80px"
+              height="80px"
+              loading="lazy"
+            />
+
+            <p>Grant Location Access</p>
+            <p>Allow access of your location to access weather</p>
+            <button class="btn" data-grantAccess>Grant Permission</button>
+          </div>
+
+          <!-- Search Location -->
+          <form class="form-container" data-searchForm>
+            <input
+              type="text"
+              placeholder="Search for City.."
+              data-searchInput
+            />
+            <button class="btn">
+              <img
+                src="Assests/compass.png"
+                alt="search-icon"
+                srcset=""
+                width="30px"
+                height="30px"
+                loading="lazy"
+              />
+            </button>
+          </form>
+
+          <!-- Loading Screen -->
+          <div class="sub-container loading-container">
+            <img
+              src="Assests/loading.gif"
+              alt="loading"
+              srcset=""
+              width="150px"
+              height="150px"
+              loading="lazy"
+            />
+            <p>Loading</p>
+          </div>
+
+          <div class="sub-conatiner error-container">
+            <img src="Assests/error.png" alt="" />
+            <h3>Try Different City :(</h3>
+          </div>
+
+          <!-- Weather-info -->
+          <div class="sub-container user-info-container">
+            <div class="name">
+              <p data-cityName></p>
+              <img data-countryIcon />
+            </div>
+
+            <p data-weatherDesc></p>
+            <img data-weatherIcon />
+            <p data-temp></p>
+
+            <div class="parameter-container">
+              <div class="parameter">
+                <img src="Assests/wind.png" alt="" loading="lazy" />
+                <p>Windspeed</p>
+                <p data-windspeed></p>
+              </div>
+
+              <div class="parameter">
+                <img src="Assests/Humidity.png" alt="" loading="lazy" />
+                <p>Humidity</p>
+                <p data-humidity></p>
+              </div>
+
+              <div class="parameter">
+                <img src="Assests/cloud.png" alt="" loading="lazy" />
+                <p>Clouds</p>
+                <p data-cloudiness></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
